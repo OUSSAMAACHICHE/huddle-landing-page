@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    /* background-position: -50px; */
+}
+:root {
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+header img {
+    max-width: 190px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+section main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+@media (max-width: 1333px) {
+    section main {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+main .image {
+    flex: 1;
+}
+main .image img {
+    max-width: 100%;
+}
+main .text {
+    flex: 1;
+}
+@media (max-width: 767px) {
+    main .text {
+        width: 100%;
+    }
+}
+main .text h1 {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 1.7;
+}
+@media (max-width: 767px) {
+    main .text h1 {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+}
+main .text p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+main .text a {
+    display: block;
+    background-color: #efefef;
+    width: 100px;
+    padding: 15px 30px;
+    border-radius: 40px;    
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+main .text a:hover {
+    background-color: var(--Soft-Magenta);
+    color: white;
+    box-shadow: 0px 0px 10px 1px black;
+}
+@media (max-width: 1333px) {
+    main .text a {
+        margin: auto;
+    }
+}
+main .icons {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+main .icons i {
+    font-size: 1rem;
+    margin-right: 15px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+main .icons i:first-child:hover {
+    color: #3180FB;
+    border-color: #3180FB;
+}
+main .icons i:nth-child(2):hover {
+    color: #6EADF1;
+    border-color: #6EADF1;
+}
+main .icons i:last-child:hover {
+    color: #F1966E;
+    border-color: #F1966E;
+}
+@media (max-width: 1333px) {
+    main .icons {
+        justify-content: center;
+    }
+}
